@@ -1,0 +1,17 @@
+{% extends 'fruits/base.html' %}
+{% load static %}
+
+{% block content %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer</title>
+</head>
+<body>
+    <h2>Ответ на задачу:</h2>
+    <p>Выполняется неравенство: {{ inequality }}</p>
+    <a href="{% url 'task' %}">Решить снова</a>
+</body>
+</html>
+{% endblock %}

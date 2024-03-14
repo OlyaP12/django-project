@@ -1,0 +1,12 @@
+{% extends 'fruits/task.html' %}
+{% load static %}
+{% block content %}
+
+<html lang="ru">
+<body>
+<h1>Введите только вещественные числа!</h1>
+<a href="{% url 'task' %}">Решить снова</a>
+</body>
+</html>
+
+{% endblock %}

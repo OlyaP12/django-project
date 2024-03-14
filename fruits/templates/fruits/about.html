@@ -1,0 +1,64 @@
+{% extends 'fruits/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5">
+    <h1>Описание людей ВШЭ</h1>
+    <ol>
+        <li>Моё ФИО: {{me.name}}
+            <ul>
+                <li><strong>Контакты:</strong></li>
+                <ul>
+                    <li>E-mail: {{me.mail}}</li>
+                    <li>Телефон: {{me.phone}}</li>
+                </ul>
+                <li><img src="{{ me.img }}" height="150"></li>
+
+            </ul>
+        </li>
+        <li>Название ОП: {{program.name}}
+            <ul>
+                <li>Описание ОП: {{program.description}}</li>
+            </ul>
+        </li>
+        <li>Руководитель ОП: {{program.leader.name}}
+            <ul>
+                <li><strong>Контакты:</strong></li>
+                <ul>
+                    <li>E-mail: {{program.leader.mail}}</li>
+                </ul>
+                <li><img src="{{ program.leader.img }}" height="150"></li>
+            </ul>
+        </li>
+        <li>Менеджер ОП: {{program.manager.name}}
+            <ul>
+                <li><strong>Контакты:</strong></li>
+                <ul>
+                    <li>E-mail: {{program.manager.mail}}</li>
+                </ul>
+                <li><img src="{{ program.manager.img }}" height="150"></li>
+            </ul>
+        </li>
+        <li>Сокурсник 1: {{student1.name}}
+            <ul>
+                <li><strong>Контакты:</strong></li>
+                <ul>
+                    <li>E-mail: {{student1.mail}}</li>
+                    <li>Телефон: {{student1.phone}}</li>
+                </ul>
+                <li><img src="{{ student1.img }}" height="150"></li>
+            </ul>
+        </li>
+        <li>Сокурсник 2: {{student2.name}}
+            <ul>
+                <li><strong>Контакты:</strong></li>
+                <ul>
+                    <li>E-mail: {{student2.mail}}</li>
+                    <li>Телефон: {{student2.phone}}</li>
+                </ul>
+                <li><img src="{{ student2.img }}" height="150"></li>
+            </ul>
+        </li>
+    </ol>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'fruits/base.html' %}
+
+{% block content %}
+<div class="post-detail">
+    <h2>{{ fruit.title }}</h2>
+    <p>{{ fruit.content }}</p>
+    <p><strong>Цена:</strong> {{ fruit.price }} ₽</p>
+</div>
+{% endblock %}

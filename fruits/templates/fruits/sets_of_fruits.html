@@ -1,0 +1,47 @@
+{% extends 'fruits/base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="products" id="products">
+    <h1 class="heading"> <span>Хотите заказать готовый набор? У нас если что предложить!</span></h1>
+
+    <div class="box-container" style="display:flex;flex-wrap: wrap; gap:1.5rem;">
+        <div class="box" style="flex:1 1 30rem;box_shadow:0 .5rem 1.5rem rgba(0,0,0, .1);border-radius: .5rem;border:.1rem solid rgba(0,0,0, .1);position:relative">
+            <div class="image" style="position: relative; text-align:center;padding-top:2rem;overflow:hidden">
+                <img src="https://optim.tildacdn.com/tild6536-6464-4433-b665-636236646238/-/resize/600x/-/format/webp/Rectangle_25.png" width="300" height="300">
+            </div>
+            <div class="content">
+                <h3>ТРОПИЧЕСКАЯ СИМФОНИЯ</h3>
+                <div class="price">1299₽ (700гр)</div>
+            </div>
+        </div>
+        <div class="box" style="flex:1 1 30rem;box_shadow:0 .5rem 1.5rem rgba(0,0,0, .1);border-radius: .5rem;border:.1rem solid rgba(0,0,0, .1);position:relative">
+            <div class="image" style="position: relative; text-align:center;padding-top:2rem;overflow:hidden">
+                <img src="https://optim.tildacdn.com/tild3937-3963-4361-b964-623266303163/-/resize/600x/-/format/webp/Rectangle_29.png" width="300" height="300">
+            </div>
+            <div class="content">
+                <h3>ФРУКТОВЫЙ АВАНТЮРИСТ</h3>
+                <div class="price">1499₽ (900гр)</div>
+            </div>
+        </div>
+        <div class="box" style="flex:1 1 30rem;box_shadow:0 .5rem 1.5rem rgba(0,0,0, .1);border-radius: .5rem;border:.1rem solid rgba(0,0,0, .1);position:relative">
+            <div class="image" style="position: relative; text-align:center;padding-top:2rem;overflow:hidden">
+                <img src="https://optim.tildacdn.com/tild3038-6665-4462-b362-336339363562/-/resize/600x/-/format/webp/Rectangle_28.png" width="300" height="300">
+            </div>
+            <div class="content">
+                <h3>ЭКЗОТИЧЕСКИЙ БУКЕТ</h3>
+                <div class="price">1599₽ (1100гр)</div>
+            </div>
+        </div>
+        <div class="box" style="flex:1 1 30rem;box_shadow:0 .5rem 1.5rem rgba(0,0,0, .1);border-radius: .5rem;border:.1rem solid rgba(0,0,0, .1);position:relative">
+            <div class="image" style="position: relative; text-align:center;padding-top:2rem;overflow:hidden">
+                <img src="https://optim.tildacdn.com/tild6137-6366-4063-b835-313765373165/-/resize/600x/-/format/webp/Rectangle_26.png" width="300" height="300">
+            </div>
+            <div class="content">
+                <h3>АРОМАТЫ ДАЛЁКИХ СТРАН</h3>
+                <div class="price">1999₽ (1700гр) </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
